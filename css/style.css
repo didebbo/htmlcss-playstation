@@ -157,6 +157,7 @@ header nav .collapse > ul > li .fa-search {
 #products .list-products .item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
     padding: 3px;
     text-decoration: none;
