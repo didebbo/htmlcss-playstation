@@ -10,7 +10,7 @@ html {
 }
 
 main {
-    height: 200vh;
+    height: 300vh;
 }
 
 .title-section .text-decoration {
@@ -142,5 +142,38 @@ header nav .collapse > ul > li .fa-search {
 /* /Hero Section */
 
 /* ANCHOR Products Section */
+#products .preview-product .preview {
+    width: 100%;
+}
+
+#products .preview img {
+    width: 100%;
+}
+
+#products .list-products .col.active {
+    border-bottom: 3px solid #0070D1;
+}
+
+#products .list-products .item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 3px;
+    text-decoration: none;
+    color: currentColor;
+    font-size: 0.9rem;
+}
+
+#products .list-products .item img {
+    width: 100%;
+}
+
+#products .list-products .item .desc {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 /* /Products Section */
