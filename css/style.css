@@ -4,10 +4,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* /Custom Reset */
 
+/* Common */
 html {
     scroll-behavior: smooth;
 }
 
+main {
+    height: 200vh;
+}
+
+.title-section .text-decoration {
+    color: #0070D1;
+}
+
+.title-section .text-subtitle {
+    color: gray;
+}
+/* /Common */
+
+
+/* ANCHOR Header */
 .top-banner img {
     width: 100%;
 }
@@ -42,11 +58,9 @@ header nav .collapse > ._right > li:last-child {
 header nav .collapse > ul > li .fa-search {
     font-size: 1.2rem;
 }
+/* /Header */
 
-main {
-    height: 200vh;
-}
-
+/* ANCHOR Hero Section */
 #hero {
     /* width: 100%; */
 }
@@ -125,4 +139,8 @@ main {
     border-radius: 10px;
     background-color: rgba(0, 112, 209, 0.6);
 } 
+/* /Hero Section */
 
+/* ANCHOR Products Section */
+
+/* /Products Section */
