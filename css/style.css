@@ -8,3 +8,33 @@ body {
     height: 200vh;
 }
 
+header nav .nav-link {
+    color: #000!important;
+    font-weight: 500;
+}
+
+header nav .navbar-toggler {
+    color: #000!important;
+    box-shadow: 0 0 0 0.1rem;
+    border: none!important;
+    transition: 0.2s!important;
+}
+
+header nav .navbar-toggler:focus {
+    color: #0070D1!important;
+    box-shadow: 0 0 0 0.2rem!important;
+}
+
+header nav .collapse > ul > li {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header nav .collapse > ._right > li:last-child {
+    margin-left: 30px;
+}
+
+header nav .collapse > ul > li .fa-search {
+    font-size: 1.2rem;
+}
