@@ -9,7 +9,10 @@ function play_intro() {
     intro.style.display = "block";
     intro_video.play();
     intro.classList.add("intro_animation");
-    setInterval(() => {
+    setTimeout(() => {
         site.style.display = "block";
     }, 15000);
+    setTimeout(() => {
+        intro.style.display = "none";
+    }, 16000);
 }
