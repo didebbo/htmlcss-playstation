@@ -302,7 +302,31 @@ header nav .collapse > ._right > li:last-child {
 
 #ps-plus .desc .logo,
 #ps-now .desc .logo {
- {
     width: 50%;
 }
+/* /PS PLUS - PS NOW */
+
+/* ANCHOR Sconti */
+#sconti img {
+    width: 100%;
+}
+
+#sconti .cards .item a {
+    position: relative;
+    display: block;
+}
+
+#sconti .cards .item a:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 112, 209, 0.6);
+}
+
+/* /Sconti */
+
 
