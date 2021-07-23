@@ -20,6 +20,10 @@ main {
 .title-section .text-subtitle {
     color: gray;
 }
+
+.btn {
+    font-weight: 500;
+}
 /* /Common */
 
 
@@ -279,3 +283,26 @@ header nav .collapse > ._right > li:last-child {
    color: gray; 
 }
 /* /PS4 Section */
+
+
+/* ANCHOR PS PLUS - PS NOW */
+#ps-plus {
+    background-color: #BEBCBB;
+}
+
+#ps-now {
+    background-color: #161C3B;
+    color: #fff;
+}
+
+#ps-plus img,
+#ps-now img {
+    width: 100%;
+}
+
+#ps-plus .desc .logo,
+#ps-now .desc .logo {
+ {
+    width: 50%;
+}
+
