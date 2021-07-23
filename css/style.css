@@ -80,7 +80,7 @@ header nav .collapse > ul > li .fa-search {
 }
 
 
-#hero .banner:hover::after {
+#hero .banner::after {
     display: block;
     position: absolute;
     content: "";
@@ -150,7 +150,16 @@ header nav .collapse > ul > li .fa-search {
     width: 100%;
 }
 
-#products .list-products .col.active {
+#products .list-products .col-4:not(.active) {
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+#products .list-products .col-4:not(.active):hover {
+    filter: grayscale(0%);
+}
+
+#products .list-products .active {
     border-bottom: 3px solid #0070D1;
 }
 
@@ -162,7 +171,8 @@ header nav .collapse > ul > li .fa-search {
     padding: 3px;
     text-decoration: none;
     color: currentColor;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
+    /* filter: grayscale(100%); */
 }
 
 #products .list-products .item img {
