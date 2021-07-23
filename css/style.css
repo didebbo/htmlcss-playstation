@@ -73,13 +73,15 @@ header nav .collapse > ul > li {
     justify-content: center;
 }
 
-header nav .collapse > ul > li .fa-search {
-    font-size: 1.2rem;
-}
-
 header nav .collapse > ul > li img {
     width: 25px;
 }
+
+header nav .collapse > ._right > li:last-child {
+    position: relative;
+    left: 5px;
+}
+
 
 /* /Header */
 
