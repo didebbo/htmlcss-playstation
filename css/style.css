@@ -192,29 +192,29 @@ header nav .collapse > ._right > li:last-child {
 }
 /* /Hero Section */
 
-/* ANCHOR Products Section */
-#products .preview-product .preview {
+/* ANCHOR PS5 Section */
+#ps5 .preview-product .preview {
     width: 100%;
 }
 
-#products .preview img {
+#ps5 .preview img {
     width: 100%;
 }
 
-#products .list-products .col-4:not(.active) {
+#ps5 .list-products .col-4:not(.active) {
     filter: grayscale(100%);
     transition: 0.2s;
 }
 
-#products .list-products .col-4:not(.active):hover {
+#ps5 .list-products .col-4:not(.active):hover {
     filter: grayscale(0%);
 }
 
-#products .list-products .active {
+#ps5 .list-products .active {
     border-bottom: 3px solid #0070D1;
 }
 
-#products .list-products .item {
+#ps5 .list-products .item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -224,11 +224,11 @@ header nav .collapse > ._right > li:last-child {
     color: currentColor;
 }
 
-#products .list-products .item img {
+#ps5 .list-products .item img {
     width: 100%;
 }
 
-#products .list-products .item .desc,
+#ps5 .list-products .item .desc,
 #new_games .list-new-games .item .desc {
     display: flex;
     height: 100%;
@@ -237,7 +237,7 @@ header nav .collapse > ._right > li:last-child {
     align-items: center;
     padding: 0 5px;
 }
-/* /Products Section */
+/* /PS5 Section */
 
 /* ANCHOR New Games */
 #new_games .list-new-games {
@@ -263,5 +263,19 @@ header nav .collapse > ._right > li:last-child {
     content: "";
     border-radius: 10px;
 }
-
 /* /New Games */
+
+/* ANCHOR PS4 Section */
+#ps4 .preview-product .item .image img {
+    width: 100%;
+}
+
+#ps4 .preview-product .item .desc {
+    /* text-align: center; */
+    padding: 0 50px;
+}
+
+#ps4 .preview-product .item .desc p {
+   color: gray; 
+}
+/* /PS4 Section */
