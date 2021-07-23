@@ -150,11 +150,8 @@ header nav .collapse > ._right > li:last-child {
     width: 100%;
 }
 
-#hero .thumbnail .col {
-    background-color: red;
-}
-
-#hero .thumbnail .item {
+#hero .thumbnail .item,
+#new_games .list-new-games .item {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -167,7 +164,8 @@ header nav .collapse > ._right > li:last-child {
     border: 2px solid #0070D1;
 }
 
-#hero .thumbnail .item img {
+#hero .thumbnail .item img,
+#new_games .list-new-games img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -183,8 +181,15 @@ header nav .collapse > ._right > li:last-child {
     left: 3px;
     right: 3px;
     border-radius: 10px;
-    background-color: rgba(0, 112, 209, 0.6);
 } 
+
+#hero .thumbnail .item:not(.active):hover::after {
+    background-color: rgba(0, 112, 209, 0.6);
+}
+
+#new_games .list-new-games .item:hover .image::after {
+        background-color: rgba(119, 20, 13, 0.6);
+}
 /* /Hero Section */
 
 /* ANCHOR Products Section */
@@ -217,20 +222,46 @@ header nav .collapse > ._right > li:last-child {
     padding: 3px;
     text-decoration: none;
     color: currentColor;
-    /* font-size: 0.9rem; */
-    /* filter: grayscale(100%); */
 }
 
 #products .list-products .item img {
     width: 100%;
 }
 
-#products .list-products .item .desc {
+#products .list-products .item .desc,
+#new_games .list-new-games .item .desc {
     display: flex;
     height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 0 5px;
+}
+/* /Products Section */
+
+/* ANCHOR New Games */
+#new_games .list-new-games {
+    color: #fff;
 }
 
-/* /Products Section */
+#new_games .list-new-games a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+#new_games .list-new-games .item .image {
+    position: relative;
+}
+
+#new_games .list-new-games .item .image::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    border-radius: 10px;
+}
+
+/* /New Games */
