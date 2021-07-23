@@ -306,17 +306,20 @@ header nav .collapse > ._right > li:last-child {
 }
 /* /PS PLUS - PS NOW */
 
-/* ANCHOR Sconti */
-#sconti img {
+/* ANCHOR Sconti - Social */
+#sconti img,
+#social img {
     width: 100%;
 }
 
-#sconti .cards .item a {
+#sconti .cards .item a,
+#social .cards .item a {
     position: relative;
     display: block;
 }
 
-#sconti .cards .item a:hover::after {
+#sconti .cards .item a:hover::after,
+#social .cards .item a:hover::after {
     position: absolute;
     display: block;
     content: "";
@@ -324,9 +327,17 @@ header nav .collapse > ._right > li:last-child {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+#sconti .cards .item a:hover::after {
     background-color: rgba(0, 112, 209, 0.6);
 }
 
-/* /Sconti */
+#social .cards .item a:hover::after {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* /Sconti - Social */
 
 
