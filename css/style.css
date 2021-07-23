@@ -10,7 +10,7 @@ html {
 }
 
 main {
-    height: 300vh;
+    /* height: 300vh; */
 }
 
 .title-section .text-decoration {
@@ -90,22 +90,33 @@ header nav .collapse > ._right > li:last-child {
     /* width: 100%; */
 }
 
-#hero .banner {
+#hero .banner,
+#new_games .banner {
     position: relative;
     width: 100%;
-    height: calc(100vh - 30.3px - 76px);
-    background-image: url("../images/jumbo-bg.png");
+    height: 500px;
     background-size: cover; 
     background-position: left top;
 }
 
+#hero .banner {
+    background-image: url("../images/jumbo-bg.png");
+}
+
+#new_games .banner {
+    background-image: url("../images/it-takes-two-hero-banner-desktop.jpg");
+}
+
 #hero .banner .container,
-#hero .banner .container .row {
+#hero .banner .container .row,
+#new_games .banner .container,
+#new_games .banner .container .row {
     height: 100%;
 }
 
 
-#hero .banner::after {
+#hero .banner::after,
+#new_games .banner::after {
     display: block;
     position: absolute;
     content: "";
@@ -113,20 +124,30 @@ header nav .collapse > ._right > li:last-child {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+#hero .banner::after {
     background-color: rgba(0, 112, 209, 0.6);
 }
 
-#hero .banner .description {
+#new_games .banner::after {
+    background-color: rgba(119, 20, 13, 0.6);
+}
+
+#hero .banner .description,
+#new_games .banner .description {
     position: relative;
     z-index: 1;
 }
 
-#hero .banner .description .logo {
-    width: 50%;
+#hero .banner .description .logo,
+#new_games .banner .description .logo {
+    width: 30%;
 }
 
-#hero .banner .description .logo img {
-    width: 100%
+#hero .banner .description .logo img,
+#new_games .banner .description .logo img {
+    width: 100%;
 }
 
 #hero .thumbnail .col {
