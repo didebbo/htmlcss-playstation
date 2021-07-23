@@ -9,6 +9,37 @@ html {
     scroll-behavior: smooth;
 }
 
+.intro {
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    animation-name: destroy;
+    animation-duration: 1s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+    z-index: 9999;
+}
+
+@keyframes destroy {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.intro video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.site {
+    /* display: none; */
+}
+
 main {
     /* height: 300vh; */
 }
