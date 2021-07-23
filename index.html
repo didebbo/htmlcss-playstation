@@ -20,6 +20,13 @@
         referrerpolicy="no-referrer" />
     <!-- /Font Awesome -->
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- /Google Fonts -->
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /Custom CSS -->
@@ -29,15 +36,29 @@
 
 <body class="bg-light">
 
+
+    <!-- Wallpaper -->
+    <div id="wallpaper" onclick="play_intro()">
+        <video id=" wallpaper_video" autoplay muted loop>
+            <source src="video/walpaper.webm" type="video/webm">
+        </video>
+        <div class="text_label">
+            Press on the screen
+            <br>
+            to start
+        </div>
+    </div>
+    <!-- /Wallpaper -->
+
     <!-- Intro -->
-    <div class="intro">
-        <video autoplay muted>
+    <div id="intro">
+        <video id="intro_video">
             <source src="video/intro.webm" type="video/webm">
         </video>
     </div>
     <!-- Intro -->
 
-    <div class="site">
+    <div id="site">
         <!-- ANCHOR Sony Banner -->
         <div class="top-banner bg-dark py-2">
             <div class="container-fluid">
@@ -855,6 +876,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- /Bootstrap JS -->
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+    <!-- /Script JS -->
 
 </body>
 

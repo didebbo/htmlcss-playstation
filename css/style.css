@@ -9,15 +9,51 @@ html {
     scroll-behavior: smooth;
 }
 
-.intro {
+#wallpaper,
+#intro {
     position: fixed;
     height: 100vh;
     overflow: hidden;
+    z-index: 9999;
+}
+
+#intro {
+    display: none;
+}
+
+#wallpaper .text_label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Tourney', cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 4px 4px 4px #000;
+    animation-name: pop_up;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-transform: uppercase;
+}
+
+@keyframes pop_up {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.intro_animation {
     animation-name: destroy;
     animation-duration: 1s;
     animation-delay: 15s;
     animation-fill-mode: forwards;
-    z-index: 9999;
 }
 
 @keyframes destroy {
@@ -29,15 +65,16 @@ html {
     }
 }
 
-.intro video{
+#wallpaper video,
+#intro video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
-.site {
-    /* display: none; */
+#site {
+    display: none;
 }
 
 main {
