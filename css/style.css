@@ -77,10 +77,6 @@ html {
     display: none;
 }
 
-main {
-    /* height: 300vh; */
-}
-
 .title-section .text-decoration {
     color: #0070D1;
 }
@@ -90,7 +86,46 @@ main {
 }
 
 .btn {
+    position: relative;
     font-weight: 500;
+    overflow: hidden;
+}
+
+.btn._btn-white {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn._btn-white-plus {
+    background-color: #fff;
+    color: #0070D1;
+}
+
+.btn._btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn._btn-blue {
+    background-color: #0070D1;
+    color: #fff;
+}
+
+.btn._btn-red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn:hover:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2.5px;
+    bottom: 2.5px;
+    left: 2.5px;
+    right: 2.5px;
+    border: 2px solid currentColor;
+    border-radius: 50rem;
 }
 /* /Common */
 
@@ -139,10 +174,9 @@ header nav .navbar-toggler:focus {
 }
 
 header nav .collapse > ul > li {
-    margin: 5px;
+    margin: 0 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 header nav .collapse > ul > li img {
