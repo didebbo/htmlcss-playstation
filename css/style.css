@@ -91,6 +91,11 @@ html {
     overflow: hidden;
 }
 
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 .btn._btn-white {
     background-color: #fff;
     color: #000;
