@@ -179,9 +179,14 @@ header nav .navbar-toggler:focus {
 }
 
 header nav .collapse > ul > li {
-    margin: 0 5px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    header nav .collapse > ul > li {
+        margin: 0 5px;
+    }
 }
 
 header nav .collapse > ul > li img {
