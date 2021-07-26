@@ -146,6 +146,7 @@ header nav .nav-link {
     transition: 0.2s;
 }
 
+header nav .show,
 header nav .nav-link:hover {
     color: #0070D1!important;
 }
@@ -156,10 +157,17 @@ header nav .dropdown-toggle::after {
     width: 10px;
     vertical-align: middle;
     transition: 0.2s;
+    transform: rotate(-90deg);
 }
 
 header nav .nav-link:hover.dropdown-toggle::after {
     content: url("../images/chevron-down-solid-hover.svg");
+}
+
+
+header nav .show.dropdown-toggle::after {
+    content: url("../images/chevron-down-solid-hover.svg");
+    transform: rotate(0deg);
 }
 
 header nav .navbar-toggler {
