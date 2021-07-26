@@ -430,6 +430,12 @@ header nav .collapse > ._right > li:last-child {
     display: block;
 }
 
+@media screen and (min-width: 576px) {
+    #social .max-width-576 {
+        max-width: 576px;
+    }
+} 
+
 #sconti .cards .item a:hover::after,
 #social .cards .item a:hover::after {
     position: absolute;
@@ -448,6 +454,7 @@ header nav .collapse > ._right > li:last-child {
 #social .cards .item a:hover::after {
     background-color: rgba(255, 255, 255, 0.6);
 }
+
 /* /Sconti - Social */
 
 /* ANCHOR Footer */
