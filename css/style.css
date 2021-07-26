@@ -386,14 +386,10 @@ header nav .collapse > ._right > li:last-child {
     width: 100%;
 }
 
-#ps4 .preview-product .item .desc {
-    /* text-align: center; */
-    padding: 0 50px;
-}
-
 #ps4 .preview-product .item .desc p {
    color: gray; 
 }
+
 /* /PS4 Section */
 
 
