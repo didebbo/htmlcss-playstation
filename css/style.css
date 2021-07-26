@@ -190,9 +190,6 @@ header nav .collapse > ul > li {
     align-items: center;    
 }
 
-/* .dropdown-menu.show {
-    margin: 8px 0;
-} */
 
 header .navbar,
 header .navbar .dropdown {
@@ -212,6 +209,11 @@ header .navbar-expand-xl .navbar-nav .dropdown-menu li a {
 
 header .navbar-expand-xl .navbar-nav .dropdown-menu li a img {
     width: 100%;
+}
+
+
+header nav .collapse img {
+    width: 25px;
 }
 
 @media screen and (min-width: 1200px) {
